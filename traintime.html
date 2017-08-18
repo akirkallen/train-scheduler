@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time Project</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <!--link rel="stylesheet" type="text/css" href="assets/style.css"-->
+   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://use.fontawesome.com/fd3fe8c252.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="jumbotron"> 
+    	<img src="http://www.netanimations.net/Moving-picture-neon-steam-engine-puffing-animated-gif.gif"
+      <h1 class = "col-lg-12">My Train Smokin </h1>  
+	</div>
+
+<div class = "row">
+  <div class = "col-lg_12">
+    <div class = "panel panel-primary">
+      <div class = "panel-heading">
+        <h3 class ="panel-title"><strong>Train Schedule</strong></h3>
+      </div>
+      <div class = "panel-body">
+      <table class="table table-hover" id="traintable">
+        <thead>
+          <tr>
+            <th> Train Name </th>
+            <th> Destination </th>
+            <th> Frequency </th>
+            <th> Next Arrival </th>
+            <th> Minutes Away </th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class = "row">
+  <div class = "col-lg_12">
+    <div class = "panel panel-primary">
+      <div class = "panel-heading">
+        <h3 class ="panel-title"><strong>ADD TRAIN</strong></h3>
+      </div>
+      <div class = "panel-body">
+          <form>
+            <div class = "form-group">
+            <label for="">Train Name</label>
+            <input type="text" class="form-control" id = "trainNameInput">
+            </div>
+            <div class = "form-group">
+            <label for="">Destination</label>
+            <input type="text" class="form-control" id = "destinationInput">
+            </div>
+            <div class = "form-group">
+            <label for="">Train Time</label>
+            <input type="text" class="form-control" id = "firsttrainInput">
+            </div>
+            <div class = "form-group">
+            <label for="">Frequency</label>
+            <input type="text" class="form-control" id = "frequencyInput">
+            </div>
+            <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
+          </form>
+
+    
+  </div>
+  </div>
+  </div>
+  </div>
+<script src="assets/logic.js"></script>
+</body>
+</html>
